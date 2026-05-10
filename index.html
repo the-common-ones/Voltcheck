@@ -31,9 +31,13 @@ input.err{border-color:#e74c3c;background:#fff8f8}
 .confirm-box{background:#fff8f0;border:1.5px solid #fcd34d;border-radius:10px;padding:14px;margin-top:-10px;margin-bottom:10px}
 .confirm-box p{font-size:13px;color:#92400e;line-height:1.5;margin-bottom:10px}
 .confirm-row{display:flex;gap:8px}
-.confirm-btn{flex:1;padding:9px;border-radius:8px;font-size:13px;font-weight:700;cursor:pointer;border:none;transition:.15s}
+.confirm-btn{flex:1;padding:9px;border-radius:8px;font-size:13px;font-weight:700;cursor:pointer;border:none}
 .confirm-yes{background:#e74c3c;color:#fff}
 .confirm-no{background:#f0f2f4;color:#555}
+.error-box{background:#fdecea;border:1.5px solid #f5c6cb;border-radius:10px;padding:14px;margin-bottom:12px}
+.error-title{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;color:#c0392b;margin-bottom:5px}
+.error-text{font-size:13px;color:#922b21;line-height:1.5}
+/* Band */
 .band-intro{font-size:13px;color:#666;line-height:1.5;margin-bottom:16px}
 .band-wrap{position:relative;margin-bottom:6px}
 .band{height:14px;border-radius:7px;position:relative;overflow:visible}
@@ -54,6 +58,10 @@ input.err{border-color:#e74c3c;background:#fff8f8}
 .opp-box{background:#e8f5e9;border:1.5px solid #a5d6a7;border-radius:10px;padding:12px 14px;margin-top:4px}
 .opp-title{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;color:#2e7d32;margin-bottom:4px}
 .opp-text{font-size:13px;color:#1b5e20;line-height:1.5}
+.warn-box{background:#fff8e1;border:1.5px solid #fde68a;border-radius:10px;padding:12px 14px;margin-top:8px}
+.warn-title{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;color:#b7791f;margin-bottom:4px}
+.warn-text{font-size:13px;color:#7a5c00;line-height:1.5}
+/* Gap table */
 .gap-table{width:100%;border-collapse:collapse;margin-top:2px}
 .gap-table thead td{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;color:#ccc;padding-bottom:10px}
 .gap-table thead td:nth-child(2){text-align:center}
@@ -64,14 +72,20 @@ input.err{border-color:#e74c3c;background:#fff8f8}
 .gap-table tbody td.bench-val{color:#1a1a1a;font-weight:500;text-align:center;width:30%}
 .gap-table tbody td.actual-val{text-align:right;font-weight:700;font-size:14px;width:30%}
 .c-bad{color:#e74c3c}.c-warn{color:#e67e22}.c-ok{color:#1D9E75}
-.source-note{font-size:10px;color:#ccc;margin-top:14px;line-height:1.6;border-top:1px solid #f0f2f4;padding-top:10px}
+.source-note{font-size:10px;color:#bbb;margin-top:14px;line-height:1.6;border-top:1px solid #f0f2f4;padding-top:10px}
+.source-note a{color:#bbb}
+/* Money */
 .money-card{background:#E1F5EE;border-radius:16px;padding:22px 20px;margin-bottom:12px}
 .money-eyebrow{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.7px;color:#1D9E75;margin-bottom:10px}
-.money-amount{font-size:40px;font-weight:500;color:#085041;line-height:1;margin-bottom:10px;letter-spacing:-1px}
+.money-range{font-size:13px;color:#3a7a65;margin-bottom:6px}
+.money-amount{font-size:40px;font-weight:500;color:#085041;line-height:1;margin-bottom:4px;letter-spacing:-1px}
+.money-mid{font-size:12px;color:#5a8a7a;margin-bottom:10px}
 .money-sub{font-size:12px;color:#3a7a65;line-height:1.7}
 .money-row{display:flex;justify-content:space-between;padding:6px 0;border-top:1px solid #c8e8df;margin-top:8px}
 .money-row span:first-child{font-size:12px;color:#5a8a7a}
 .money-row span:last-child{font-size:12px;font-weight:600;color:#085041}
+.disclaimer{font-size:10px;color:#aaa;line-height:1.6;margin-top:10px;padding-top:10px;border-top:1px solid #c8e8df}
+/* Lead */
 .lead-card{background:#fff;border-radius:16px;padding:20px;margin-bottom:12px;box-shadow:0 1px 4px rgba(0,0,0,0.07);border:1.5px solid #e1f5ee}
 .lead-eyebrow{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.7px;color:#1D9E75;margin-bottom:6px}
 .lead-headline{font-size:17px;font-weight:700;color:#085041;margin-bottom:6px;line-height:1.3}
@@ -81,6 +95,8 @@ input.err{border-color:#e74c3c;background:#fff8f8}
 .send-btn:disabled{background:#aaa;cursor:default}
 .success-box{background:#e8f5e9;border:1.5px solid #a5d6a7;border-radius:12px;padding:16px;text-align:center;margin-top:12px}
 .success-box p{font-size:14px;color:#1b5e20;line-height:1.6}
+.restart-btn{width:100%;padding:12px;background:transparent;border:1.5px solid #1D9E75;color:#1D9E75;border-radius:10px;font-size:14px;font-weight:600;cursor:pointer;margin-top:10px;transition:.15s}
+.restart-btn:hover{background:#E1F5EE}
 .cta-strip{background:#085041;border-radius:16px;padding:20px;margin-bottom:12px;display:flex;gap:14px;align-items:center}
 .cta-strip-text{flex:1}
 .cta-strip-text p{font-size:12px;color:rgba(255,255,255,.6);line-height:1.5;margin-top:3px}
@@ -155,14 +171,10 @@ input.err{border-color:#e74c3c;background:#fff8f8}
         <div class="q-hint">Panels lose about 0.5% efficiency per year. This helps us apply the right benchmark for your system's age.</div>
         <select id="install-year">
           <option value="">Select year…</option>
-          <option value="2024">2024</option>
-          <option value="2023">2023</option>
-          <option value="2022">2022</option>
-          <option value="2021">2021</option>
-          <option value="2020">2020</option>
-          <option value="2019">2019</option>
-          <option value="2018">2018</option>
-          <option value="2017">2017</option>
+          <option value="2024">2024</option><option value="2023">2023</option>
+          <option value="2022">2022</option><option value="2021">2021</option>
+          <option value="2020">2020</option><option value="2019">2019</option>
+          <option value="2018">2018</option><option value="2017">2017</option>
           <option value="2016">2016 or earlier</option>
         </select>
       </div>
@@ -210,23 +222,67 @@ input.err{border-color:#e74c3c;background:#fff8f8}
 </div>
 
 <script>
-const SNAMES={fnb:'Food and beverage',textile:'Textiles and garments',plastics:'Plastics and manufacturing',coldchain:'Cold chain and logistics',other:'Other industrial'};
-const PSH=4.5,PR_BASE=0.78;
+// ── CONFIG ────────────────────────────────────────────────────────────────────
+const PSH_MIN=4.5,PSH_MAX=5.5,PSH_MID=5.0;
+const PR_MIN=0.75,PR_MAX=0.82,PR_BASE=0.78;
 const SY_AVG=1350,SY_B20=1100,SY_T20=1500;
-const RATE_PHP=11.50;
-const FX={PHP:1,USD:0.0177,EUR:0.0163};
-const SYM={USD:'$',EUR:'€',PHP:'₱'};
+const RATE_MIN=0.10,RATE_MAX=0.22,RATE_MID=0.16;
+const PHP_TO_USD=0.0164,EUR_TO_USD=0.92;
 const ENDPOINT='https://script.google.com/macros/s/AKfycbzDQMUfYTdJTqedmgH4ArYqOi5Ms73CE7pw2dnXgtBoxl4KnlZoNK4UjqA2vgfkRD02PQ/exec';
+const SYM={USD:'$',EUR:'€'};
 
 let zeroGenConfirmed=false;
 
+// ── HELPERS ───────────────────────────────────────────────────────────────────
+function toUSD(amount,cur){
+  if(cur==='PHP')return amount*PHP_TO_USD;
+  if(cur==='EUR')return amount*EUR_TO_USD;
+  return amount;
+}
+function toDisplay(usd,cur){
+  if(cur==='EUR')return usd/EUR_TO_USD;
+  return usd;
+}
+function fmt(n,cur){
+  const s=SYM[cur]||'$';
+  n=Math.round(n);
+  if(n>=1e6)return s+(n/1e6).toFixed(1).replace(/\.0$/,'')+'M';
+  if(n>=1000)return s+(n/1000).toFixed(0)+'K';
+  return s+n.toLocaleString();
+}
+function fmtN(n){return Math.round(n||0).toLocaleString();}
+function degradedPR(year){
+  const age=Math.max(0,2025-parseInt(year||2020));
+  return Math.max(0.60,PR_BASE-age*0.005);
+}
+function colorVal(actual,bench,hi){
+  const r=actual/bench;
+  if(hi)return r>=0.95?'c-ok':r>=0.80?'c-warn':'c-bad';
+  return r<=1.05?'c-ok':r<=1.20?'c-warn':'c-bad';
+}
+function toLeft(score){return 8+score*0.84;}
+function tierInfo(score){
+  if(score>=80)return{label:'Top 20%',pill:'background:#d4f5e9;color:#085041',txt:'Your system is in the top 20% of industrial solar systems in Southeast Asia.'};
+  if(score>=60)return{label:'Above average',pill:'background:#e1f5ee;color:#1D9E75',txt:'Your system is performing above average for your sector in Southeast Asia.'};
+  if(score>=38)return{label:'Average',pill:'background:#fff8e1;color:#b7791f',txt:'Your system is around the sector average. There is room to move into the top tier.'};
+  if(score>=18)return{label:'Below average',pill:'background:#fff3e0;color:#c0392b',txt:'Your system is underperforming compared to similar facilities in Southeast Asia.'};
+  return{label:'Bottom 20%',pill:'background:#fdecea;color:#c0392b',txt:'Your system is in the bottom 20% of industrial solar in Southeast Asia. Significant losses are occurring.'};
+}
+function diagnose(actualPR,ageBenchPR,ageYrs){
+  const r=actualPR/ageBenchPR;
+  if(ageYrs<3&&r<0.85)return{title:'Probable cause: inverter underperformance or shading — not age-related',text:`This system is only ${ageYrs} year${ageYrs!==1?'s':''} old so panel degradation is not the cause. A performance ratio of ${actualPR.toFixed(2)} on a new system points to inverter clipping, partial shading, or a wiring fault. An inverter log review would isolate it quickly.`};
+  if(ageYrs>=5&&r<0.88)return{title:'Probable cause: degradation and soiling',text:`At ${ageYrs} years old, this system has lost approximately ${(ageYrs*0.5).toFixed(1)}% to natural degradation. The remaining gap is likely soiling. A panel wash and IR thermal inspection would confirm.`};
+  if(r<0.92)return{title:'Probable cause: soiling and minor losses',text:'The gap is consistent with surface soiling and normal losses. Regular cleaning every 6–8 weeks typically closes this gap.'};
+  return{title:'System performing within benchmark range',text:`Performance ratio of ${actualPR.toFixed(2)} is within the expected range for Southeast Asia. Focus on maintaining your cleaning schedule.`,isOk:true};
+}
+
+// ── FORM LOGIC ────────────────────────────────────────────────────────────────
 function updatePowerFields(){
   const v=document.getElementById('power-source').value;
   const has=['grid-solar','grid-solar-genset','solar-genset'].includes(v);
   document.getElementById('solar-fields').classList.toggle('hidden',!has);
   zeroGenConfirmed=false;
 }
-
 function clearGenConfirm(){
   const v=parseFloat(document.getElementById('actual-gen').value);
   if(v>0){
@@ -235,12 +291,9 @@ function clearGenConfirm(){
     zeroGenConfirmed=false;
   }
 }
-
 function confirmZeroGen(yes){
-  if(yes){
-    zeroGenConfirmed=true;
-    document.getElementById('gen-confirm').classList.add('hidden');
-  } else {
+  if(yes){zeroGenConfirmed=true;document.getElementById('gen-confirm').classList.add('hidden');}
+  else{
     document.getElementById('actual-gen').value='';
     document.getElementById('actual-gen').focus();
     document.getElementById('actual-gen').classList.add('err');
@@ -249,46 +302,7 @@ function confirmZeroGen(yes){
   }
 }
 
-function fmt(n,cur){
-  const s=SYM[cur]||'$';
-  n=Math.round(n);
-  if(n>=1e6)return s+(n/1e6).toFixed(1).replace(/\.0$/,'')+'M';
-  if(n>=1000)return s+(Math.round(n/100)*100/1000).toFixed(1).replace(/\.0$/,'')+'K';
-  return s+n.toLocaleString();
-}
-function fmtN(n){return Math.round(n||0).toLocaleString()}
-
-function toOut(phpAmount,cur){return phpAmount*(FX[cur]||1)}
-function toBillPHP(amount,cur){return cur==='PHP'?amount:amount/FX[cur]}
-
-function degradedPR(year){
-  const age=Math.max(0,2025-parseInt(year));
-  return Math.max(0.60,PR_BASE-age*0.005);
-}
-
-function syScore(sy){
-  if(sy>=SY_T20)return 95;
-  if(sy>=SY_AVG)return 65+(sy-SY_AVG)/(SY_T20-SY_AVG)*25;
-  if(sy>=SY_B20)return 25+(sy-SY_B20)/(SY_AVG-SY_B20)*40;
-  return Math.max(3,(sy/SY_B20)*25);
-}
-
-function tier(score){
-  if(score>=80)return{label:'Top 20%',pill:'background:#d4f5e9;color:#085041',txt:'Your system is in the top 20% of industrial solar systems in Southeast Asia.'};
-  if(score>=60)return{label:'Above average',pill:'background:#e1f5ee;color:#1D9E75',txt:'Your system is performing above average for your sector in Southeast Asia.'};
-  if(score>=38)return{label:'Average',pill:'background:#fff8e1;color:#b7791f',txt:'Your system is around the sector average. There is room to move into the top tier.'};
-  if(score>=18)return{label:'Below average',pill:'background:#fff3e0;color:#c0392b',txt:'Your system is underperforming compared to similar facilities in Southeast Asia.'};
-  return{label:'Bottom 20%',pill:'background:#fdecea;color:#c0392b',txt:'Your system is in the bottom 20% of industrial solar in Southeast Asia. Significant losses are occurring.'};
-}
-
-function colorVal(actual,bench,hi){
-  const r=actual/bench;
-  if(hi)return r>=0.95?'c-ok':r>=0.80?'c-warn':'c-bad';
-  return r<=1.05?'c-ok':r<=1.20?'c-warn':'c-bad';
-}
-
-function toLeft(score){return 8+score*0.84}
-
+// ── MAIN ──────────────────────────────────────────────────────────────────────
 function run(){
   const sector=document.getElementById('sector').value;
   const region=document.getElementById('region').value;
@@ -302,8 +316,8 @@ function run(){
   const year=hasSolar?document.getElementById('install-year').value:'';
   const actualGen=hasSolar?(parseFloat(document.getElementById('actual-gen').value)||0):0;
 
-  if(!sector||!region||!powerSource||!bill){alert('Please answer all required questions.');return}
-  if(hasSolar&&(!cap||!year)){alert('Please enter your solar system capacity and installation year.');return}
+  if(!sector||!region||!powerSource||!bill){alert('Please answer all required questions.');return;}
+  if(hasSolar&&(!cap||!year)){alert('Please enter your solar system capacity and installation year.');return;}
   if(hasSolar&&actualGen===0&&!zeroGenConfirmed){
     document.getElementById('gen-confirm').classList.remove('hidden');
     document.getElementById('actual-gen').classList.add('err');
@@ -311,114 +325,205 @@ function run(){
     return;
   }
 
-  const billPHP=toBillPHP(bill,billCur);
-  const ageYrs=year?Math.max(0,2025-parseInt(year)):0;
-  const ageBenchPR=year?degradedPR(year):PR_BASE;
-  const psLabel={'grid':'Grid only','grid-solar':'Grid + solar','grid-solar-genset':'Grid + solar + genset','solar-genset':'Solar + genset (off-grid)','grid-genset':'Grid + genset','other':'Other'}[powerSource]||powerSource;
-
-  let annualLossPhp=0,score=20,gapRows='',moneyRows='',bandIntro='',moneyLabel='',moneySub='',causeBox='';
-  let actualPR=0,benchMonthly=0,ageBenchMonthly=0,isOffline=false;
-
-  if(hasSolar&&actualGen>0){
-    actualPR=actualGen/(cap*PSH*30);
-    const actualSY=(actualGen/cap)*12;
-    benchMonthly=(cap*SY_AVG)/12;
-    ageBenchMonthly=cap*PSH*30*ageBenchPR;
-    const gapKwhAnnual=Math.max(0,benchMonthly-actualGen)*12;
-    annualLossPhp=gapKwhAnnual*RATE_PHP;
-    score=syScore(actualSY);
-    bandIntro='Compared to industrial solar installations across Southeast Asia, benchmarked for your sector and system age.';
-    moneyLabel='What your performance gap is costing you';
-    moneySub=`Estimated annual value of the gap between your actual generation and the Southeast Asia industrial benchmark for a ${cap} kW system.`;
-    gapRows=`
-      <tr><td>Monthly generation<br><small style="font-size:11px;color:#ccc">${cap} kW system</small></td><td class="bench-val">${fmtN(benchMonthly)} kWh</td><td class="actual-val ${colorVal(actualGen,benchMonthly,true)}">${fmtN(actualGen)} kWh</td></tr>
-      <tr><td>Age-adjusted benchmark<br><small style="font-size:11px;color:#ccc">${ageYrs} yr degradation</small></td><td class="bench-val">${fmtN(ageBenchMonthly)} kWh</td><td class="actual-val ${colorVal(actualGen,ageBenchMonthly,true)}">${fmtN(actualGen)} kWh</td></tr>
-      <tr><td>Performance ratio<br><small style="font-size:11px;color:#ccc">Sunlight → electricity</small></td><td class="bench-val">${ageBenchPR.toFixed(2)}</td><td class="actual-val ${colorVal(actualPR,ageBenchPR,true)}">${actualPR.toFixed(2)}</td></tr>`;
-    moneyRows=`
-      <div class="money-row"><span>Monthly equivalent</span><span>${fmt(toOut(annualLossPhp/12,cur),cur)}/month</span></div>
-      <div class="money-row"><span>Generation shortfall</span><span>${fmtN(gapKwhAnnual)} kWh/year</span></div>
-      <div class="money-row"><span>Age-adjusted gap</span><span>${fmt(toOut(Math.max(0,ageBenchMonthly-actualGen)*12*RATE_PHP,cur),cur)}/year</span></div>
-      <div class="money-row"><span>System age</span><span>${ageYrs} yr (${(ageYrs*0.5).toFixed(1)}% degradation)</span></div>`;
-    const prRatio=actualPR/ageBenchPR;
-    let ct,cx,isOk=false;
-    if(ageYrs>=5&&prRatio<0.88){ct='Probable cause: degradation and soiling';cx=`At ${ageYrs} years old, your system has accumulated natural degradation. Combined with dust and soiling — common in Philippine industrial environments — this is likely the primary driver of your gap. A panel wash and IR inspection would confirm.`}
-    else if(prRatio<0.80){ct='Probable cause: inverter underperformance or shading';cx='Your performance ratio is significantly below benchmark for a system of this age. This pattern often points to inverter clipping, partial shading from new structures, or a fault that monitoring has not flagged. An inverter log review would isolate the cause.'}
-    else if(prRatio<0.90){ct='Probable cause: soiling and minor degradation';cx='Your gap is consistent with surface soiling and normal panel wear. Regular cleaning every 6–8 weeks and an annual performance check are typically enough to close this.'}
-    else{ct='System performing close to benchmark';cx='Your performance ratio is near the sector standard. Focus on maintaining your cleaning schedule and monitoring for sudden drops.';isOk=true}
-    causeBox=`<div class="${isOk?'opp-box':'cause-box'}"><div class="${isOk?'opp-title':'cause-title'}">${ct}</div><div class="${isOk?'opp-text':'cause-text'}">${cx}</div></div>`;
-
-  } else if(hasSolar&&actualGen===0&&zeroGenConfirmed){
-    isOffline=true;
-    score=5;
-    const expectedMonthly=(cap*SY_AVG)/12;
-    annualLossPhp=expectedMonthly*12*RATE_PHP;
-    bandIntro='Your system is currently offline. The figure below represents what you are losing every day it remains down.';
-    moneyLabel='Estimated cost of your system being offline';
-    moneySub=`Based on expected generation of ${fmtN(expectedMonthly)} kWh/month for a ${cap} kW system at the Southeast Asia benchmark.`;
-    gapRows=`
-      <tr><td>Expected monthly generation<br><small style="font-size:11px;color:#ccc">${cap} kW system</small></td><td class="bench-val">${fmtN(expectedMonthly)} kWh</td><td class="actual-val c-bad">0 kWh</td></tr>
-      <tr><td>Daily loss while offline</td><td class="bench-val">${fmtN(expectedMonthly/30)} kWh</td><td class="actual-val c-bad">0 kWh</td></tr>`;
-    moneyRows=`
-      <div class="money-row"><span>Daily cost of being offline</span><span>${fmt(toOut(annualLossPhp/365,cur),cur)}/day</span></div>
-      <div class="money-row"><span>Monthly cost</span><span>${fmt(toOut(annualLossPhp/12,cur),cur)}/month</span></div>`;
-    causeBox=`<div class="alert-box"><div class="alert-title">⚑ System offline — immediate attention required</div><div class="alert-text">Your solar system is not generating. Common causes include inverter fault, tripped breaker, grid disconnect, or physical damage. Contact your installer or check your inverter display now. Every day offline costs ${fmt(toOut(annualLossPhp/365,cur),cur)}.</div></div>`;
-
-  } else {
-    score=15;
-    const potentialOffsetPhp=billPHP*0.35*12;
-    annualLossPhp=potentialOffsetPhp;
-    bandIntro='Based on your energy spend compared to similar facilities in Southeast Asia that have deployed solar.';
-    moneyLabel='What a well-designed solar system could save you';
-    moneySub='Based on a 35% bill reduction — the sector average outcome for facilities in your industry with a correctly sized system.';
-    gapRows=`
-      <tr><td>Solar bill offset potential<br><small style="font-size:11px;color:#ccc">Sector average with solar</small></td><td class="bench-val">30–40%</td><td class="actual-val c-bad">0%</td></tr>
-      <tr><td>Estimated monthly saving<br><small style="font-size:11px;color:#ccc">With right-sized system</small></td><td class="bench-val">${fmt(toOut(billPHP*0.35,cur),cur)}</td><td class="actual-val c-bad">${SYM[cur]}0</td></tr>`;
-    moneyRows=`
-      <div class="money-row"><span>Monthly equivalent</span><span>${fmt(toOut(annualLossPhp/12,cur),cur)}/month</span></div>
-      <div class="money-row"><span>Solar offset assumed</span><span>35% of bill</span></div>`;
-    causeBox=`<div class="opp-box"><div class="opp-title">↑ Opportunity identified</div><div class="opp-text">Facilities in your sector with a well-designed solar system offset an average of 30–40% of their electricity bill. Based on your current spend, a correctly sized system could save ${fmt(toOut(annualLossPhp/12,cur),cur)} every month.</div></div>`;
+  // VALIDATION: zero bill
+  if(bill<=0){
+    showError('Please enter a valid electricity bill. A real facility always has a monthly electricity cost.');
+    return;
   }
 
-  const t=tier(score);
-  const left=toLeft(score);
-  const annualLossOut=toOut(annualLossPhp,cur);
+  const billUSD=toUSD(bill,billCur);
+  const ageYrs=year?Math.max(0,2025-parseInt(year)):0;
+  const ageBenchPR=year?degradedPR(year):PR_BASE;
+  const isOffline=hasSolar&&actualGen===0&&zeroGenConfirmed;
+  const psLabel={'grid':'Grid only','grid-solar':'Grid + solar','grid-solar-genset':'Grid + solar + genset','solar-genset':'Solar + genset (off-grid)','grid-genset':'Grid + genset','other':'Other'}[powerSource]||powerSource;
 
-  window._summary={
-    sector:SNAMES[sector],region:'Southeast Asia',powerSource:psLabel,
-    cap,year,actualGen,bill,billCur,cur,
-    annualLossPhp,annualLossOut,tier:t.label,comments,isOffline
-  };
+  let html='';
 
-  const html=`
-  <div class="card">
-    <div class="phase-label">Readiness result</div>
-    <div class="band-intro">${bandIntro}</div>
-    <div class="band-wrap">
-      <div class="band"><div class="band-gradient"></div><div class="band-marker" style="left:${left}%"></div></div>
+  if(hasSolar&&actualGen>0){
+    // VALIDATION: impossible generation
+    const maxTheoretical=cap*PSH_MAX*30*PR_MAX;
+    if(actualGen>maxTheoretical*1.1){
+      showError(`A ${cap} kW system cannot physically produce ${fmtN(actualGen)} kWh in a month in Southeast Asia. The maximum possible is approximately ${fmtN(maxTheoretical)} kWh. Please check your inverter reading — the unit may be MWh rather than kWh.`);
+      return;
+    }
+
+    const actualPR=actualGen/(cap*PSH_MID*30);
+    const actualSY=(actualGen/cap)*12;
+    const benchMin=cap*PSH_MIN*30*PR_MIN;
+    const benchMid=cap*PSH_MID*30*ageBenchPR;
+    const benchMax=cap*PSH_MAX*30*PR_MAX;
+    const gapMin=Math.max(0,benchMin-actualGen)*12;
+    const gapMax=Math.max(0,benchMax-actualGen)*12;
+    const gapMid=Math.max(0,benchMid-actualGen)*12;
+    const annualMinUSD=gapMin*RATE_MIN;
+    const annualMaxUSD=gapMax*RATE_MAX;
+    const annualMidUSD=gapMid*RATE_MID;
+    const annualMin=toDisplay(annualMinUSD,cur);
+    const annualMax=toDisplay(annualMaxUSD,cur);
+    const annualMid=toDisplay(annualMidUSD,cur);
+
+    let score;
+    if(actualSY>=SY_T20)score=95;
+    else if(actualSY>=SY_AVG)score=65+(actualSY-SY_AVG)/(SY_T20-SY_AVG)*25;
+    else if(actualSY>=SY_B20)score=25+(actualSY-SY_B20)/(SY_AVG-SY_B20)*40;
+    else score=Math.max(3,(actualSY/SY_B20)*25);
+
+    const t=tierInfo(score);
+    const left=toLeft(score);
+    const dx=diagnose(actualPR,ageBenchPR,ageYrs);
+
+    // Warnings
+    const warnings=[];
+    const estimatedLoad=billUSD/RATE_MID;
+    const coverage=Math.round((actualGen/estimatedLoad)*100);
+    if(coverage<15&&cap>0)warnings.push({title:'System likely undersized',text:`Your ${cap} kW system covers only ~${coverage}% of your estimated consumption. A well-sized system should cover 30–40%. Even perfect performance cannot meaningfully reduce this facility's bill.`});
+    if(ageYrs>=5&&actualGen>cap*PSH_MID*30*ageBenchPR)warnings.push({title:`${ageYrs}-year-old system outperforming benchmark`,text:`Despite ${ageYrs} years of natural degradation, this system is generating above its age-adjusted benchmark. Excellent maintenance indicated.`,isGood:true});
+    if(actualGen>=benchMax*0.95)warnings.push({title:'Gap is minimal — near top of benchmark range',text:'Your system is generating at or near the maximum benchmark for Southeast Asia. Focus on sustaining current performance.',isGood:true});
+
+    const warnHTML=warnings.map(w=>`
+      <div class="${w.isGood?'opp-box':'warn-box'}">
+        <div class="${w.isGood?'opp-title':'warn-title'}">⚑ ${w.title}</div>
+        <div class="${w.isGood?'opp-text':'warn-text'}">${w.text}</div>
+      </div>`).join('');
+
+    html=`
+    <div class="card">
+      <div class="phase-label">Readiness result</div>
+      <div class="band-intro">Compared to industrial solar installations across Southeast Asia, benchmarked for your sector and system age.</div>
+      <div class="band-wrap">
+        <div class="band"><div class="band-gradient"></div><div class="band-marker" style="left:${left}%"></div></div>
+      </div>
+      <div class="band-ticks"><span>Bottom 20%</span><span>Below avg</span><span>Average</span><span>Above avg</span><span>Top 20%</span></div>
+      <span class="position-pill" style="${t.pill}">${t.label}</span>
+      <div class="position-sentence">${t.txt}</div>
+      <div class="${dx.isOk?'opp-box':'cause-box'}">
+        <div class="${dx.isOk?'opp-title':'cause-title'}">${dx.title}</div>
+        <div class="${dx.isOk?'opp-text':'cause-text'}">${dx.text}</div>
+      </div>
+      ${warnHTML}
     </div>
-    <div class="band-ticks"><span>Bottom 20%</span><span>Below avg</span><span>Average</span><span>Above avg</span><span>Top 20%</span></div>
-    <span class="position-pill" style="${t.pill}">${t.label}</span>
-    <div class="position-sentence">${t.txt}</div>
-    ${causeBox}
-  </div>
-  <div class="card">
-    <div class="phase-label">Where the gap is</div>
-    <table class="gap-table">
-      <thead><tr><td>Metric</td><td>Benchmark</td><td>Your system</td></tr></thead>
-      <tbody>${gapRows}</tbody>
-    </table>
-    <div class="source-note">Benchmarks: IRENA Southeast Asia Solar Performance Data; Philippine DOE Industrial Consumption Statistics. PR sector average: 0.78. Specific yield: 1,350 kWh/kWp/year. Degradation: 0.5%/year.</div>
-  </div>
-  <div class="money-card">
-    <div class="money-eyebrow">${moneyLabel}</div>
-    <div class="money-amount">${fmt(annualLossOut,cur)}</div>
-    <div class="money-sub">${moneySub}</div>
-    ${moneyRows}
-  </div>
+
+    <div class="card">
+      <div class="phase-label">Where the gap is</div>
+      <table class="gap-table">
+        <thead><tr><td>Metric</td><td>SE Asia benchmark range</td><td>Your system</td></tr></thead>
+        <tbody>
+          <tr><td>Monthly generation<br><small style="font-size:11px;color:#ccc">${cap} kW system</small></td><td class="bench-val">${fmtN(benchMin)}–${fmtN(benchMax)} kWh</td><td class="actual-val ${colorVal(actualGen,benchMid,true)}">${fmtN(actualGen)} kWh</td></tr>
+          <tr><td>Performance ratio<br><small style="font-size:11px;color:#ccc">Sunlight → electricity</small></td><td class="bench-val">${PR_MIN}–${PR_MAX}</td><td class="actual-val ${colorVal(actualPR,ageBenchPR,true)}">${actualPR.toFixed(2)}</td></tr>
+          <tr><td>Annual yield per kW<br><small style="font-size:11px;color:#ccc">kWh per kW installed</small></td><td class="bench-val">${SY_B20.toLocaleString()}–${SY_T20.toLocaleString()} kWh/kW</td><td class="actual-val ${colorVal(actualSY,SY_AVG,true)}">${fmtN(actualSY)} kWh/kW</td></tr>
+        </tbody>
+      </table>
+      <div class="source-note">
+        Benchmarks: <a href="https://doe.gov.ph/5-how-it-done-solar-roof-top-installations-philippines" target="_blank">Philippine DOE rooftop solar case studies</a> · <a href="https://doe.gov.ph/net-metering-home" target="_blank">Philippine DOE net metering</a> · <a href="https://legacy.doe.gov.ph/sites/default/files/pdf/netmeter/net-metering-reference-guide-philippines-E.pdf" target="_blank">DOE Net Metering Reference Guide</a> · <a href="https://company.meralco.com.ph/news-and-advisories/rates-archives" target="_blank">Meralco rates archive</a> · <a href="https://globalsolaratlas.info/map?c=12,122,6&r=PHL" target="_blank">Global Solar Atlas — Philippines</a>.<br>
+        Performance ratio range: ${PR_MIN}–${PR_MAX}. Specific yield range: ${SY_B20.toLocaleString()}–${SY_T20.toLocaleString()} kWh/kWp/year. Peak sun hours: ${PSH_MIN}–${PSH_MAX} hrs/day. Degradation: 0.5%/year.
+      </div>
+    </div>
+
+    <div class="money-card">
+      <div class="money-eyebrow">What your performance gap is costing you</div>
+      <div class="money-range">Estimated annual range</div>
+      <div class="money-amount">${fmt(annualMin,cur)} – ${fmt(annualMax,cur)}</div>
+      <div class="money-mid">Midpoint estimate: ${fmt(annualMid,cur)}/year</div>
+      <div class="money-sub">Based on a generation shortfall of ${fmtN(gapMin)}–${fmtN(gapMax)} kWh/year against the Southeast Asia benchmark range for a ${cap} kW system.</div>
+      <div class="money-row"><span>Monthly equivalent (mid)</span><span>${fmt(annualMid/12,cur)}/month</span></div>
+      <div class="money-row"><span>System age adjustment</span><span>${ageYrs} yr (${(ageYrs*0.5).toFixed(1)}% degradation)</span></div>
+      <div class="money-row"><span>Electricity rate range used</span><span>$${RATE_MIN}–$${RATE_MAX}/kWh</span></div>
+      <div class="disclaimer">These figures are indicative estimates based on published Southeast Asia solar benchmarks. Range reflects variation in regional sunlight hours (${PSH_MIN}–${PSH_MAX} hrs/day) and electricity rates (${RATE_MIN}–${RATE_MAX}/kWh). Actual performance may vary by site, equipment, and local conditions. Sources: Philippine DOE · Meralco rates archive · Global Solar Atlas.</div>
+    </div>`;
+
+    window._summary={sector,region:'Southeast Asia',powerSource:psLabel,cap,year,actualGen,bill,billCur,cur,annualMin:Math.round(annualMinUSD),annualMax:Math.round(annualMaxUSD),annualMid:Math.round(annualMidUSD),tier:t.label,comments,isOffline:false};
+
+  } else if(isOffline){
+    const expectedMonthly=cap*PSH_MID*30*ageBenchPR;
+    const annualMinUSD=expectedMonthly*12*RATE_MIN;
+    const annualMaxUSD=expectedMonthly*12*RATE_MAX;
+    const annualMidUSD=expectedMonthly*12*RATE_MID;
+    const dailyMin=toDisplay(annualMinUSD/365,cur);
+    const dailyMax=toDisplay(annualMaxUSD/365,cur);
+    const annualMin=toDisplay(annualMinUSD,cur);
+    const annualMax=toDisplay(annualMaxUSD,cur);
+    const annualMid=toDisplay(annualMidUSD,cur);
+
+    html=`
+    <div class="card">
+      <div class="phase-label">Readiness result</div>
+      <div class="band-intro">Your system is currently offline. Every day it remains down is a day of lost savings.</div>
+      <div class="band-wrap"><div class="band"><div class="band-gradient"></div><div class="band-marker" style="left:10%"></div></div></div>
+      <div class="band-ticks"><span>Bottom 20%</span><span>Below avg</span><span>Average</span><span>Above avg</span><span>Top 20%</span></div>
+      <span class="position-pill" style="background:#fdecea;color:#c0392b">System offline</span>
+      <div class="alert-box" style="margin-top:12px">
+        <div class="alert-title">⚑ Immediate attention required</div>
+        <div class="alert-text">Common causes: inverter fault, tripped breaker, grid disconnect, or physical damage. Contact your installer or check your inverter display now. Every day offline costs ${fmt(dailyMin,cur)}–${fmt(dailyMax,cur)}.</div>
+      </div>
+    </div>
+    <div class="money-card">
+      <div class="money-eyebrow">Cost of being offline</div>
+      <div class="money-range">Estimated annual range</div>
+      <div class="money-amount">${fmt(annualMin,cur)} – ${fmt(annualMax,cur)}</div>
+      <div class="money-mid">Daily cost: ${fmt(dailyMin,cur)}–${fmt(dailyMax,cur)}/day</div>
+      <div class="money-sub">Based on expected generation of ${fmtN(expectedMonthly)} kWh/month for a ${cap} kW system at Southeast Asia benchmark.</div>
+      <div class="money-row"><span>Monthly cost (mid)</span><span>${fmt(annualMid/12,cur)}/month</span></div>
+      <div class="disclaimer">Indicative estimate. Range reflects regional electricity rate variation ($${RATE_MIN}–$${RATE_MAX}/kWh). Sources: Philippine DOE · IRENA · Meralco 2025.</div>
+    </div>`;
+
+    window._summary={sector,region:'Southeast Asia',powerSource:psLabel,cap,year,actualGen:0,bill,billCur,cur,annualMin:Math.round(annualMinUSD),annualMax:Math.round(annualMaxUSD),annualMid:Math.round(annualMidUSD),tier:'System offline',comments,isOffline:true};
+
+  } else {
+    // No solar
+    const monthlyMinUSD=billUSD*0.30;
+    const monthlyMaxUSD=billUSD*0.40;
+    const annualMinUSD=monthlyMinUSD*12;
+    const annualMaxUSD=monthlyMaxUSD*12;
+    const annualMidUSD=(annualMinUSD+annualMaxUSD)/2;
+    const annualMin=toDisplay(annualMinUSD,cur);
+    const annualMax=toDisplay(annualMaxUSD,cur);
+    const annualMid=toDisplay(annualMidUSD,cur);
+    const estSize=Math.round(billUSD/RATE_MID/30/PSH_MID*1.4/PR_BASE);
+
+    html=`
+    <div class="card">
+      <div class="phase-label">Readiness result</div>
+      <div class="band-intro">Based on your energy spend compared to similar facilities in Southeast Asia that have deployed solar.</div>
+      <div class="band-wrap"><div class="band"><div class="band-gradient"></div><div class="band-marker" style="left:10%"></div></div></div>
+      <div class="band-ticks"><span>Bottom 20%</span><span>Below avg</span><span>Average</span><span>Above avg</span><span>Top 20%</span></div>
+      <span class="position-pill" style="background:#fff8e1;color:#b7791f">No solar installed</span>
+      <div class="opp-box" style="margin-top:12px">
+        <div class="opp-title">↑ Opportunity identified</div>
+        <div class="opp-text">Facilities in your sector with a well-designed solar system offset 30–40% of their electricity bill. Based on your current spend, a correctly sized system (~${estSize} kW, roughly ${Math.round(estSize*2.2)} panels) could save ${fmt(monthlyMinUSD*1,cur)}–${fmt(monthlyMaxUSD,cur)} every month.</div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="phase-label">Where the gap is</div>
+      <table class="gap-table">
+        <thead><tr><td>Metric</td><td>With solar (sector avg)</td><td>Your facility now</td></tr></thead>
+        <tbody>
+          <tr><td>Solar bill offset</td><td class="bench-val">30–40%</td><td class="actual-val c-bad">0%</td></tr>
+          <tr><td>Monthly saving potential</td><td class="bench-val">${fmt(monthlyMinUSD,cur)}–${fmt(monthlyMaxUSD,cur)}</td><td class="actual-val c-bad">${SYM[cur]||'$'}0</td></tr>
+          <tr><td>Estimated system size</td><td class="bench-val">~${estSize} kW</td><td class="actual-val c-bad">None</td></tr>
+        </tbody>
+      </table>
+      <div class="source-note">Estimates based on 30–40% bill offset at $${RATE_MIN}–$${RATE_MAX}/kWh electricity rate range. Sources: Philippine DOE · IRENA · Meralco 2025.</div>
+    </div>
+    <div class="money-card">
+      <div class="money-eyebrow">What a well-designed solar system could save you</div>
+      <div class="money-range">Estimated annual range</div>
+      <div class="money-amount">${fmt(annualMin,cur)} – ${fmt(annualMax,cur)}</div>
+      <div class="money-mid">Midpoint estimate: ${fmt(annualMid,cur)}/year</div>
+      <div class="money-sub">Based on 30–40% bill reduction — the sector average outcome for facilities in your industry with a correctly sized system.</div>
+      <div class="money-row"><span>Monthly equivalent (mid)</span><span>${fmt(annualMid/12,cur)}/month</span></div>
+      <div class="money-row"><span>Solar offset assumed</span><span>30–40% of bill</span></div>
+      <div class="disclaimer">Indicative estimate. Actual savings depend on system sizing, site conditions, and local tariffs. Sources: Philippine DOE · IRENA · Meralco 2025.</div>
+    </div>`;
+
+    window._summary={sector,region:'Southeast Asia',powerSource:psLabel,cap:estSize,year:'',actualGen:0,bill,billCur,cur,annualMin:Math.round(annualMinUSD),annualMax:Math.round(annualMaxUSD),annualMid:Math.round(annualMidUSD),tier:'No solar installed',comments,isOffline:false};
+  }
+
+  // Lead capture + CTA
+  html+=`
   <div class="lead-card">
     <div class="lead-eyebrow">Your full report</div>
     <div class="lead-headline">Receive this diagnosis by email</div>
-    <div class="lead-sub">TCO Studio will send you a written assessment and reach out to discuss what a well-designed system looks like for your facility. Half-day on-site review · Assessment within 5 working days · No obligation.</div>
+    <div class="lead-sub">TCO Studio will send you a detailed written report and reach out to discuss what a well-designed system looks like for your facility. Half-day on-site review · Assessment within 5 working days · No obligation.</div>
     <div class="field"><div class="q-label">Your name</div><input type="text" id="lead-name" placeholder="e.g. Maria Santos"></div>
     <div class="field"><div class="q-label">Your email</div><input type="email" id="lead-email" placeholder="e.g. maria@facility.com"></div>
     <div class="field"><div class="q-label">Company</div><input type="text" id="lead-company" placeholder="e.g. Pacific Foods Inc."></div>
@@ -434,8 +539,11 @@ function run(){
       </select>
     </div>
     <button class="send-btn" id="send-btn" onclick="submitLead()">Send me the report →</button>
-    <div id="lead-success" class="hidden success-box"><p>✓ Report on its way, <strong id="success-name"></strong>.<br>TCO Studio will be in touch within 1 business day.</p></div>
+    <div id="lead-success" class="hidden success-box">
+      <p>✓ Report on its way, <strong id="success-name"></strong>.<br>Check your inbox — your detailed report is there now.<br>Ready to talk? <a href="https://calendar.app.google/LNAJqA9m824djTY68" target="_blank" style="color:#1D9E75;font-weight:600">Book a conversation →</a></p>
+    </div>
   </div>
+  <button class="restart-btn" onclick="restartTool()">← Run another diagnosis</button>
   <div class="cta-strip">
     <div class="cta-strip-text">
       <strong>TCO Studio</strong>
@@ -445,9 +553,21 @@ function run(){
   </div>`;
 
   const el=document.getElementById('results');
-  el.innerHTML=html;
-  el.classList.remove('hidden');
+  el.innerHTML=html;el.classList.remove('hidden');
   setTimeout(()=>el.scrollIntoView({behavior:'smooth',block:'start'}),50);
+}
+
+function showError(msg){
+  const el=document.getElementById('results');
+  el.innerHTML=`<div class="error-box"><div class="error-title">⚑ Please check your inputs</div><div class="error-text">${msg}</div></div>`;
+  el.classList.remove('hidden');
+  el.scrollIntoView({behavior:'smooth',block:'start'});
+}
+
+function restartTool(){
+  document.getElementById('results').classList.add('hidden');
+  document.getElementById('results').innerHTML='';
+  document.getElementById('phase1').scrollIntoView({behavior:'smooth',block:'start'});
 }
 
 function submitLead(){
@@ -455,33 +575,22 @@ function submitLead(){
   const email=document.getElementById('lead-email').value.trim();
   const company=document.getElementById('lead-company').value.trim();
   const role=document.getElementById('lead-role').value;
-  if(!name||!email){alert('Please enter your name and email to receive the report.');return}
-
+  if(!name||!email){alert('Please enter your name and email to receive the report.');return;}
   const btn=document.getElementById('send-btn');
-  btn.disabled=true;
-  btn.textContent='Sending…';
-
+  btn.disabled=true;btn.textContent='Sending…';
   const s=window._summary||{};
   const params=new URLSearchParams({
-    name,email,
-    company:company||'',
-    role:role||'',
-    sector:s.sector||'',
-    region:s.region||'',
-    powerSource:s.powerSource||'',
-    capacity:s.cap||'',
-    year:s.year||'',
+    name,email,company:company||'',role:role||'',
+    sector:s.sector||'',region:s.region||'',powerSource:s.powerSource||'',
+    capacity:s.cap||'',year:s.year||'',
     actualGen:s.actualGen!==undefined?s.actualGen:'',
-    bill:s.bill||'',
-    billCur:s.billCur||'',
-    currency:s.cur||'',
+    bill:s.bill||'',billCur:s.billCur||'',currency:s.cur||'',
     tier:s.tier||'',
-    annualGap:s.annualLossOut?Math.round(s.annualLossOut):'',
+    annualGap:s.annualMid||'',
+    annualMin:s.annualMin||'',annualMax:s.annualMax||'',
     isOffline:s.isOffline?'Yes':'No',
     comments:s.comments||''
   }).toString();
-
-  // Image trick reliably fires GET to Apps Script without CORS issues
   const img=new Image();
   img.onload=img.onerror=function(){
     document.getElementById('lead-success').classList.remove('hidden');
