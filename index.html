@@ -123,8 +123,8 @@ input.err{border-color:#e74c3c;background:#fff8f8}
 
   <div class="tabs">
     <button class="tab active" onclick="switchTab('solar')">☀️ Solar</button>
-    <button class="tab tab-soon" onclick="showComingSoon('Fuel &amp; Steam')">🔥 Fuel &amp; Steam</button>
-    <button class="tab tab-soon" onclick="showComingSoon('Downtime')">⏱ Downtime</button>
+    <button class="tab tab-soon" onclick="showComingSoon('fuel')">🔥 Fuel &amp; Steam</button>
+    <button class="tab tab-soon" onclick="showComingSoon('downtime')">⏱ Downtime</button>
   </div>
 
   <div id="coming-soon-banner" class="hidden coming-soon-banner">
@@ -338,27 +338,26 @@ function switchTab(tab){
     document.getElementById('coming-soon-banner').classList.add('hidden');
   }
 }
-function showComingSoon(name){
+function showComingSoon(moduleKey){
   document.querySelectorAll('.tab').forEach(function(t){t.classList.remove('active');});
   document.getElementById('phase1').classList.add('hidden');
   document.getElementById('results').classList.add('hidden');
   document.getElementById('results').innerHTML='';
-  var moduleKey=name==='Fuel &amp; Steam'||name==='Fuel & Steam'?'fuel':'downtime';
   var moduleLabel=moduleKey==='fuel'?'Fuel & Steam':'Downtime & Maintenance';
   var moduleDesc=moduleKey==='fuel'
     ?'Benchmark your fuel and steam consumption against sector averages across Southeast Asia, Colombia, and Brazil. Identify excess consumption, estimate cost of losses, and get a probable cause.'
     :'Benchmark your unplanned downtime against sector averages. Calculate the revenue cost of reactive maintenance and identify whether a planned maintenance programme would pay for itself.';
   var banner=document.getElementById('coming-soon-banner');
-  banner.innerHTML=`
-    <div class="coming-soon-icon">⏳</div>
-    <div class="coming-soon-title">${moduleLabel} — coming soon</div>
-    <div class="coming-soon-desc">${moduleDesc}</div>
-    <div class="waitlist-row">
-      <input type="text" id="wl-name-${moduleKey}" placeholder="Your name">
-      <input type="email" id="wl-email-${moduleKey}" placeholder="Your email">
-    </div>
-    <button class="waitlist-btn" id="wl-btn-${moduleKey}" onclick="joinWaitlist('${moduleKey}','${moduleLabel}')">Join waitlist →</button>
-    <div class="waitlist-success" id="wl-success-${moduleKey}">✓ You're on the list — we'll let you know when it launches.</div>`;
+  banner.innerHTML=
+    '<div class="coming-soon-icon">⏳</div>'+
+    '<div class="coming-soon-title">'+moduleLabel+' — coming soon</div>'+
+    '<div class="coming-soon-desc">'+moduleDesc+'</div>'+
+    '<div class="waitlist-row">'+
+      '<input type="text" id="wl-name-'+moduleKey+'" placeholder="Your name">'+
+      '<input type="email" id="wl-email-'+moduleKey+'" placeholder="Your email">'+
+    '</div>'+
+    '<button class="waitlist-btn" id="wl-btn-'+moduleKey+'" onclick="joinWaitlist(\''+moduleKey+'\',\''+moduleLabel+'\')">Join waitlist →</button>'+
+    '<div class="waitlist-success" id="wl-success-'+moduleKey+'">✓ You\'re on the list — we\'ll let you know when it launches.</div>';
   banner.classList.remove('hidden');
 }
 
