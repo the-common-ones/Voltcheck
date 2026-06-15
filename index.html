@@ -38,14 +38,22 @@
       <div class="q-label">Where is your facility?</div>
       <select id="region" onchange="updateCountryField()">
         <option value="">Select your region...</option>
-        <option value="ph">Southeast Asia</option>
-        <option value="co">South America - Colombia</option>
-        <option value="br">South America - Brazil</option>
-        <option value="dr">Caribbean - Dominican Republic</option>
-        <option value="" disabled>Central America - coming soon</option>
-        <option value="" disabled>South Asia - coming soon</option>
-        <option value="" disabled>Middle East - coming soon</option>
-        <option value="" disabled>Sub-Saharan Africa - coming soon</option>
+        <optgroup label="Live regions">
+          <option value="carib">Caribbean &amp; Central America (Dominican Republic, Mexico, Costa Rica...)</option>
+          <option value="sam-n">South America - Andean &amp; Caribbean Coast (Colombia, Ecuador, Peru...)</option>
+          <option value="sam-s">South America - Southern Cone &amp; Brazil (Brazil, Argentina, Chile...)</option>
+          <option value="europe-s">Southern Europe (Romania, Spain, Portugal, Italy...)</option>
+          <option value="sea">Southeast Asia (Philippines, Vietnam, Indonesia...)</option>
+        </optgroup>
+        <optgroup label="Coming soon">
+          <option value="" disabled>North America (USA, Canada, Mexico...)</option>
+          <option value="" disabled>Northern Europe (UK, Germany, France...)</option>
+          <option value="" disabled>Middle East &amp; North Africa (UAE, Egypt, Morocco...)</option>
+          <option value="" disabled>Sub-Saharan Africa (Nigeria, Kenya, South Africa...)</option>
+          <option value="" disabled>South Asia (India, Pakistan, Bangladesh...)</option>
+          <option value="" disabled>East Asia (Japan, South Korea, China...)</option>
+          <option value="" disabled>Oceania (Australia, New Zealand...)</option>
+        </optgroup>
       </select>
     </div>
 
